@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -----style.css------->
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <!-- -----style.css------->
+
+    <!-- --------fonte de icones----- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- --------fonte de icones----- -->
+
+    <!-- Swiper CSS (da CDNJS) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    />
+    <!-- Swiper CSS (da CDNJS) -->
+    <!--  CSS (da CDNJS) -->
+
+    <!-- Splide.js Slide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css"
+    />
+
+    <!-- Splide.js Slide CSS -->
+
+    <!-- Estilos próprios -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Loja de Suplementos</title>
+  </head>
+  <body>
+    <header>
+      <div class="topo">
+        <div class="logo">Supra<span>Force</span></div>
+        <div class="menu-span" id="abrirMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-desktop">
+          <nav>
+            <ul>
+              <li><a href="#">Pré-treino</a></li>
+              <li><a href="#">Termogênico</a></li>
+              <li><a href="#">Whey Protein</a></li>
+              <li><a href="#">Creatina</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- ------------------mobile-------------- -->
+    <div class="overlay-menu" id="overlay"></div>
+    <div class="menu-mobile" id="menu-mobile">
+      <nav>
+        <i class="fas fa-times"></i>
+        <ul>
+          <li><a href="#">Pré-treino</a></li>
+          <li><a href="#">Termogênico</a></li>
+          <li><a href="#">Whey Protein</a></li>
+          <li><a href="#">Creatina</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ------------------mobile-------------- -->
+
+    <!-- ///////////////////////////////////////////////////////////////// -->
+
+    <div class="banner">
+      <img src="assets/img/banner.webp" alt="banner" />
+      <div class="box-banner">
+        <h1>SupraForce: Suplementação Inteligente para Resultados Reais</h1>
+        <button>Compre Agora</button>
+      </div>
+    </div>
+
+    <!-- ----------------seção botoes -->
+    <section class="section-botoes">
+      <div class="botoes">
+        <div class="box-botoes">
+          <button><i class="fas fa-dumbbell"></i></button>
+          <p>Massa muscular</p>
+        </div>
+        <div class="box-botoes">
+          <button><i class="fas fa-bolt"></i></button>
+          <p>Energia</p>
+        </div>
+        <div class="box-botoes">
+          <button><i class="fas fa-weight-scale"></i></button>
+          <p>Emagrecimento</p>
+        </div>
+        <div class="box-botoes">
+          <button><i class="fas fa-heartbeat"></i></button>
+          <p>Qualidade de vida</p>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------seção botoes -->
+
+    <!-- ----------------seção massa muscular---- -->
+    <section class="massa-muscular">
+      <h2 class="sub-titulo">Massa Muscular</h2>
+      <div class="swiper swiper-2" data-aos="fade-up" data-aos-duration="1000">
+        <div class="swiper-wrapper teste">
+          <div class="swiper-slide">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/whey-protein3.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$99,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/creatina.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$119,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/bcaa.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$99,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/hipercalorico.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$89,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/bulminaa.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$69,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/multivitamina2.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$79,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paginação e Botões de Navegação -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="suplementacao">
+      <img src="assets/img/musculação.jpg" alt="Suplemento Alimentar" />
+      <div class="texto">
+        <h2>A Importância da Suplementação</h2>
+        <p>
+          Os suplementos ajudam a fornecer os nutrientes essenciais para o
+          crescimento muscular, aceleram a recuperação e melhoram o desempenho
+          nos treinos. Whey Protein, Creatina e BCAA são alguns dos mais
+          utilizados.
+        </p>
+      </div>
+    </section>
+
+    <section class="energia">
+      <h2 class="sub-titulo">Energia</h2>
+      <div class="swiper swiper-2" data-aos="fade-up" data-aos-duration="1000">
+        <div class="swiper-wrapper teste">
+          <div class="swiper-slide">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/whey-protein3.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$99,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/creatina.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$119,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/bcaa.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$99,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/hipercalorico.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$89,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/bulminaa.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$69,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/multivitamina2.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$79,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paginação e Botões de Navegação -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="box-energia">
+      <img src="assets/img/whey-protein.jpg" alt="Suplementação e Energia" />
+      <div class="texto">
+        <h2>Suplementação e Energia</h2>
+        <p>
+          Os suplementos pré-treino e energéticos ajudam a manter a disposição
+          durante os exercícios. A cafeína, a creatina e os BCAAs são exemplos
+          de suplementos que aumentam o desempenho e reduzem a fadiga.
+        </p>
+        <button>Garanta o seu agora</button>
+      </div>
+    </section>
+
+    <div id="banner-slider" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="assets/img/baner1-canva.png" alt="Banner 1" />
+          </li>
+          <li class="splide__slide">
+            <img src="assets/img/baner2-canva.png" alt="Banner 2" />
+          </li>
+          <li class="splide__slide">
+            <img src="assets/img/baner3-canva.png" alt="Banner 3" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Estrutura splid.js do Slide -->
+    <section class="top-vendidos">
+      <h2>Top Vendas</h2>
+      <div class="container-topvendidos">
+        <div class="box-vendidos">
+          <img src="assets/img/creatina.jpg" alt="" />
+          <p>RS85,00</p>
+          <button>Adquira já!</button>
+        </div>
+        <div class="box-vendidos">
+          <img src="assets/img/bulminaa.jpg" alt="" />
+          <p>RS90,00</p>
+          <button>Adquira já!</button>
+        </div>
+        <div class="box-vendidos">
+          <img src="assets/img/whey-protein3.jpg" alt="" />
+          <p>RS105,00</p>
+          <button>Adquira já!</button>
+        </div>
+        <div class="box-vendidos">
+          <img src="assets/img/multivitamina2.jpg" alt="" />
+          <p>RS55,00</p>
+          <button>Adquira já!</button>
+        </div>
+        <div class="box-vendidos">
+          <img src="assets/img/hipercalorico.jpg" alt="" />
+          <p>RS115,00</p>
+          <button>Adquira já!</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="emagrecimento">
+      <h2 class="sub-titulo">Emagrecimento</h2>
+      <div class="swiper swiper-2" data-aos="fade-up" data-aos-duration="1000">
+        <div class="swiper-wrapper teste">
+          <div class="swiper-slide">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/whey-protein3.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$99,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/creatina.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$119,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/bcaa.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$99,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/hipercalorico.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$89,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/bulminaa.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$69,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/multivitamina2.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$79,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paginação e Botões de Navegação -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="suplementacao-emagrecimento">
+      <div class="container">
+        <div class="content">
+          <h2>Importância da Suplementação para o Emagrecimento</h2>
+          <p>
+            Os suplementos podem ser aliados no processo de emagrecimento,
+            auxiliando no controle do apetite, aceleração do metabolismo e
+            preservação da massa muscular. Quando combinados com uma alimentação
+            equilibrada e exercícios físicos, ajudam a obter resultados mais
+            eficazes e sustentáveis.
+          </p>
+        </div>
+        <div class="image">
+          <img
+            src="assets/img/musculação.jpg"
+            alt="Suplementação para emagrecimento"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="qualidade-vida">
+      <h2 class="sub-titulo">Qulidade De Vida</h2>
+      <div class="swiper swiper-2" data-aos="fade-up" data-aos-duration="1000">
+        <div class="swiper-wrapper teste">
+          <div class="swiper-slide">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/whey-protein3.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$99,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/creatina.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$119,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/bcaa.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$99,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/hipercalorico.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$89,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/bulminaa.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$69,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-slide slide-img">
+            <div class="div-swiper">
+              <div class="box-img">
+                <img src="assets/img/multivitamina2.jpg" alt="" />
+              </div>
+              <p class="texto-slide">R$79,90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paginação e Botões de Navegação -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="social">
+          <h3>Nos siga nas redes sociais</h3>
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="address">
+          <h3>Nosso Endereço</h3>
+          <p>Rua dos Atletas, 123 - São Paulo, SP</p>
+          <p>Telefone: (11) 98765-4321</p>
+        </div>
+
+        <div class="motivation">
+          <h3>Seu corpo, sua força!</h3>
+          <p>
+            "A disciplina supera a motivação. Suplemente, treine e conquiste!"
+          </p>
+        </div>
+      </div>
+      <div class="credits">
+        <p>Desenvolvido por <strong>MM TecSolutions</strong> 🚀</p>
+      </div>
+    </footer>
+
+    <!-- Link para os ícones do FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/YOUR_KIT_CODE.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- -----------------SCRIPTS---------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="assets/script/script.js"></script>
+    <!-- Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+  </body>
+</html>

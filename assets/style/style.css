@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+body{
+    overflow-x: hidden;
+    height: 100vh;
+
+}
+.menu-mobile{
+    display: none;
+}
+
+/* ------------menu-span----- */
+.menu-span{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+.menu-span span{
+    width: 35px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #000080;
+}
+
+/* ------------menu-span----- */
+
+
+/* ------topo--------- */
+.topo{
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    background-color:#FF6347;
+    margin-bottom: 20px;
+}
+
+
+.topo .menu-desktop ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+
+}
+
+.topo .menu-desktop ul li{
+    padding: 5px 15px;
+
+}
+
+.topo .menu-desktop ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: transform .2s ease-in-out;
+
+}
+.topo .menu-desktop ul li a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+
+}
+.topo .logo{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+.topo .logo span{
+    color: #000080;
+    font-size: 27px;
+    font-weight: 900;
+}
+/* ------topo--------- */
+
+/* -------------banner-------------- */
+.banner{
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+    background-color: #000000c0;
+}
+.banner img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.banner .box-banner{
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.banner .box-banner h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px 10px;
+
+}
+.banner .box-banner button{
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #FF6347;
+    transition: transform .2s ease-in;
+
+}
+.banner .box-banner button:hover{
+    transform: scale(1.1);
+    box-shadow:0 0 10px 2px #FF6347;
+   
+
+}
+
+/* -------------banner-------------- */
+
+/* -------------Botoes---------- */
+.botoes{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 2%;
+    margin-top: 3rem;
+    overflow-x: auto;
+
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.botoes .box-botoes{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.botoes .box-botoes button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #f52f0c;
+    border: none;
+}
+.botoes .box-botoes button i{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 900;
+}
+
+/* -------------Botoes---------- */
+
+.sub-titulo{
+    text-align: center;
+    padding: 30px 0;
+}  
+
+/* -------------massa muscular---------- */
+.massa-muscular{
+    width: 100%;
+    padding: 20px 2%;
+}
+.sub-titulo{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.suplementacao {
+    margin-top: 3rem;
+    background:#000000c0 ;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    box-shadow: 0 0 10px 10px #0000005d;
+}
+
+.suplementacao img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    z-index: -1;
+}
+
+.suplementacao .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.suplementacao h2 {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.suplementacao p {
+    color: #fff;
+    width: 60%;
+    margin-top: auto;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* -------------massa muscular---------- */
+
+/* -------------swiper---------- */
+.swiper {
+    width: 95%;
+    height: 450px;
+}
+.swiper-wrapper{
+    margin: 0;
+    gap: 1px;
+
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    padding: 10px 8px;
+    background: transparent;
+    margin: 0;
+}
+.swiper-slide .box-img{
+    width: 100%;
+    height: 70%;
+}
+.swiper-slide .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.div-swiper{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #0000007e;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper-slide .div-swiper p{
+    color: #000;
+    font-weight: 600;
+    padding: 10px 8px;
+    font-size: 15px;
+}
+.swiper-slide .div-swiper button{
+    border: none;
+    padding: 10px 8px;
+    color: #fff;
+    background-color: #f52f0c;
+    border-radius: 5px;
+}
+
+#banner-slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #000080, #000);
+
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+
+
+/* -------------swiper---------- */
+
+/*  -----------------bos-energia ---------- */
+.box-energia {
+    background: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 4%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.box-energia img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.box-energia .texto {
+    padding: 0 8px;
+    width: 50%;
+}
+
+.box-energia h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.box-energia p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px 0;
+}
+.box-energia button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #FF6347;
+    transition: transform .2s ease-in;
+}
+
+.box-energia button:hover{
+transform: scale(1.1);
+    box-shadow:0 0 10px 2px #FF6347;
+
+}
+
+/* -------------top vendido  ------------ */
+.top-vendidos h2{
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 3rem;
+  
+}
+.top-vendidos{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.top-vendidos .container-topvendidos{
+    width: 100%;
+    height: auto;
+    padding: 10px 4%;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto ;
+    gap: 10px;
+   
+
+}
+
+.top-vendidos .container-topvendidos .box-vendidos{
+    width: 300px;
+    height: 350px;
+    padding: 20px 0;
+    background: linear-gradient(180deg, #000080, #000000dc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+
+    
+}
+
+.top-vendidos .container-topvendidos .box-vendidos img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+.top-vendidos .container-topvendidos .box-vendidos p{
+    color: #fff;
+    padding: 15px 0;
+    
+}
+
+.top-vendidos .container-topvendidos .box-vendidos button{
+    
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #f52f0c;
+    
+}
+
+.suplementacao-emagrecimento {
+    margin-top: 3rem;
+    padding: 50px 20px;
+    color: #000;
+    background-color: #0000004b;
+}
+
+.suplementacao-emagrecimento .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.suplementacao-emagrecimento .content {
+    flex: 1;
+}
+
+.suplementacao-emagrecimento h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.suplementacao-emagrecimento p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.suplementacao-emagrecimento .image {
+    flex: 1;
+    text-align: center;
+}
+
+.suplementacao-emagrecimento .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+.footer {
+    background: linear-gradient(180deg, #000080, #000);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.social {
+    flex: 1;
+}
+
+.social .social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #fff;
+    color: #f52f0c;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.social .social-btn:hover {
+    background: #ffcc00;
+    color: #000;
+}
+
+.address {
+    flex: 1;
+}
+
+.motivation {
+    flex: 1;
+    font-style: italic;
+}
+
+/* Créditos */
+.credits {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.credits strong {
+    color: #ffcc00;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+
+    /* -------------menu-mobile------- */
+.menu-desktop{
+    display: none;
+}
+
+.menu-span{
+    display: flex;
+}
+
+.menu-mobile{
+    display: flex;
+    position: fixed;
+    background-color: #FF6347;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    transition: .5s;
+}
+.menu-mobile.show{
+    display: flex;
+    position: fixed;
+    background-color: #FF6347;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+.menu-mobile nav{
+    width: 100%;
+}
+
+.menu-mobile ul{
+    list-style: none;
+    width: 100%;
+    padding-top: 10px;
+   
+}
+.menu-mobile ul li{
+   width: 100%;
+   padding: 8px 15px;
+   
+}
+.menu-mobile ul li:hover{
+    background-color: #f52f0c;
+    
+ }
+ .menu-mobile ul li a{
+   text-decoration: none;
+   text-align: right;
+   display: block;
+   color: #fff;
+   font-weight: 500;
+   white-space: nowrap;
+    
+ }
+
+ .menu-mobile nav i{
+    padding: 10px;
+    font-size: 34px;
+    color: #000080;
+    
+ }
+
+ .overlay-menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ad;
+    z-index: 99;
+ }
+ .overlay-menu.open{
+    display: block;
+ }
+
+
+
+    /* -------------menu-mobile------- */
+
+   /* -------------banner-------------- */
+.banner{
+    width: 100%;
+    min-height: 250px;
+    position: relative;
+    background-color: #000000c0;
+}
+
+.banner .box-banner{
+    white-space: wrap;
+    width: 100%;
+    text-align: center;
+    padding: 0 2%;
+    
+}
+
+.banner .box-banner h1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 10px;
+
+}
+
+.banner .box-banner button{
+   
+    padding: 10px 15px;
+    
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+
+
+/* -------------banner-------------- */
+.section-botoes{
+    padding: 0 2%;
+    width: 100%;
+}
+
+
+.botoes .box-botoes{
+    width: 100%;
+    white-space: nowrap;
+    
+
+}
+
+.botoes .box-botoes button{
+    width: 80px;
+    height: 80px;
+    
+}
+
+/* -------------Botoes---------- */
+
+/* -------------massa muscular---------- */
+.suplementacao {
+    width: 100%;
+    height: 300px;
+   
+}
+
+.suplementacao h2 {
+    font-size: 20px;
+}
+
+.suplementacao p {
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 15px;
+
+}
+
+
+.box-energia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.box-energia img {
+    width: 100%;
+    border-radius: 0;
+}
+
+.box-energia .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.box-energia p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+.box-energia button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 12px;
+    
+}
+
+#banner-slider {
+    width: 100%;
+    height: 300px;
+   
+
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* -------------top vendido  ------------ */
+
+.top-vendidos .container-topvendidos{
+    width: 100%;
+    height: auto;
+    padding: 0 2%;
+
+}
+
+.top-vendidos .container-topvendidos .box-vendidos{
+    width: 100%;
+    height: 250px;
+    padding: 10px 8px;
+    
+
+    
+}
+
+.top-vendidos .container-topvendidos .box-vendidos img{
+    object-fit: cover;
+    width: 140px;
+    height: 140px;
+  
+}
+
+
+.suplementacao-emagrecimento {
+    margin-top: 3rem;
+    padding: 8px 15px;
+    color: #000;
+    background-color: #0000004b;
+}
+
+.suplementacao-emagrecimento .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.suplementacao-emagrecimento h2 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.suplementacao-emagrecimento p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* -------------massa muscular---------- */
+
+
+
+
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-btn {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width:480px){
+    #banner-slider {
+        width: 100%;
+        height: 200px;
+       
+    
+    }
+    
+    .splide__slide img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+}
