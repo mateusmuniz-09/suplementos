@@ -149,7 +149,7 @@ btnAdicionar.addEventListener("click", () => {
 // Atualiza a interface do carrinho
 function atualizarCarrinho() {
   cartItem.innerHTML = "";
-
+  valorTotal = 0;
   carrinho.forEach((item, index) => {
     const itemDiv = document.createElement("div");
     itemDiv.classList.add("item");
