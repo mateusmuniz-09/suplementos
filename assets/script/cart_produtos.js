@@ -155,10 +155,14 @@ function atualizarCarrinho() {
     itemDiv.classList.add("item");
 
     itemDiv.innerHTML = `
+    <div class="itens-carts">
              <span>${item.nome}- R$ ${item.precoTotal.toFixed(2)} </span>
+             <div> 
               <button class="menosQuantidade" data-index="${index}">-</button>
-              ${item.quantidade}
+               ${item.quantidade} 
               <button class="maisQuantidade" data-index="${index}">+</button>
+              </div>
+              </div>
           `;
 
     cartItem.appendChild(itemDiv);
